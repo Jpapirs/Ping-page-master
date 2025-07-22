@@ -1,0 +1,134 @@
+@charset "utf-8";
+
+@import url("https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "libre franklin", Arial, Helvetica, sans-serif;
+}
+
+img {
+  max-width: 100%;
+}
+
+.section-flex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.image {
+  margin: 40px;
+}
+
+.title {
+  margin-bottom: 40px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+.title h1 {
+  margin-bottom: 20px;
+  font-size: 2.75rem;
+  color: hsl(0, 0%, 59%);
+  font-weight: 300;
+}
+.title span {
+  font-weight: 700;
+  color: black;
+}
+
+.title h3 {
+  color: black;
+  font-weight: 400;
+  display: flex;
+}
+
+.form {
+  margin-bottom: 40px;
+  width: 100%;
+  justify-self: center;
+  align-items: center;
+  justify-items: center;
+}
+
+.form input {
+  padding: 15px 60px;
+  border-radius: 40px;
+  width: 350px;
+  max-width: 100%;
+  border: 1px solid hsl(223, 100%, 88%);
+  position: relative;
+  &::placeholder {
+    color: hsl(223, 100%, 88%);
+    text-align: left;
+    font-size: 1rem;
+  }
+}
+
+.btn {
+  background-color: hsl(223, 87%, 63%);
+  color: white;
+  padding: 15px 60px;
+  border-radius: 40px;
+  border: none;
+  box-shadow: -5px 10px 50px hsl(223, 87%, 63%);
+  margin-left: 20px;
+  font-size: 0.9rem;
+  font-weight: 300;
+  transition: ease-out 0.3s;
+  &:hover {
+    opacity: 0.7;
+  }
+}
+
+.graphic {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+.graphic img {
+  width: 65%;
+  display: block;
+}
+
+.list ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.list ul li {
+  list-style-type: none;
+  margin-right: 20px;
+  font-size: 2rem;
+  margin-bottom: 5px;
+  color: hsl(223, 87%, 63%);
+}
+
+.list span {
+  color: hsl(0, 0%, 59%);
+  margin: 35px;
+}
+
+.message{
+    display: none;
+}
+
+.message .correct {
+  display: block;
+  justify-self: center;
+  color: green;
+}
+.message .incorrect {
+  display: block;
+  justify-self: center;
+  color: red;
+}
