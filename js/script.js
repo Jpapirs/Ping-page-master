@@ -5,6 +5,7 @@ const regxp = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
 function handleClick(event) {
   event.preventDefault();
+  message.classList.remove("correct","incorrect");
 
   if (input.value.match(regxp)) {
     console.log("correto");
@@ -12,11 +13,9 @@ function handleClick(event) {
 
     message.innerText = "Valid Email";
     message.classList.add("correct");
-    message.classList.remove("incorrect");
   } else {
     input.style.border = "2px solid hsl(354, 100%, 66%)";
     message.classList.add("incorrect");
-    message.classList.remove("correct");
     message.innerText = "Please provide a valid email address";
   }
 }

@@ -112,18 +112,21 @@ img {
   font-size: 2rem;
   margin-bottom: 5px;
   color: hsl(223, 87%, 63%);
+  cursor: pointer;
 }
 
 .list span {
   color: hsl(0, 0%, 59%);
-  margin: 35px;
+  padding-bottom: 10px;
 }
 
-.message{
-    display: none;
-    margin: 10px;
-    color: hsl(354, 100%, 66%);
-    font-style: italic;
+.message {
+  display: none;
+  margin: 10px;
+  color: hsl(354, 100%, 66%);
+  font-style: italic;
+  font-weight: 400;
+  text-transform: capitalize;
 }
 
 .message.correct {
@@ -131,7 +134,28 @@ img {
   color: green;
 }
 .message.incorrect {
-  display: block ;
+  display: block;
   color: hsl(354, 100%, 66%);
 }
 
+@media (max-width: 580px) {
+  .btn {
+    margin: 10px;
+    display: block;
+    width: 100%;
+  }
+  .form input {
+    margin: 10px;
+    display: block;
+    width: 100%;
+  }
+  .message{ 
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+  }
+  .list ul li{
+    font-size: 1.5rem;
+  }
+}
